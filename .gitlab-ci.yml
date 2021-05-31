@@ -1,0 +1,11 @@
+image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/ruby:latest
+
+stages:
+  - deploy
+
+github_mirroring:
+  stage: deploy
+  script:
+    - git push -f https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/si-codelounge/tako.git HEAD:main
+  only:
+    - main
