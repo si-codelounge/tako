@@ -35,6 +35,7 @@ To explore the recorded sessions, open the Tako explorer by clicking on the Tako
 ![Tako Session Analytics](./media/tako-analytics.png)
 
 Currently, you can access the following analytics:
+* Session metadata;
 * List of  `Raw LSP Events` in JSON format;
 * `Session Digest`.
 
@@ -51,6 +52,14 @@ The last part of the session digest shows the hot changes tree and some other st
 
 ![Tako Hot Changes Tree](./media/tako-hotchangestree.png)
 
+#### GitHub Copilot Digest
+
+From version 1.2.0, Tako also tracks GitHub Copilot events. As with the other features, the events are stored only locally. In particular, Tako
+tracks if you accept a suggestion or not. You can see basic statistics on 
+your Copilot usage in a dedicated analytics view, the **Copilot Digest**, that you can access from the usual panel. 
+
+
+![Tako Copilot Digest](./media/tako-copilot-digest.png)
 
 ## Configuring Tako
 
